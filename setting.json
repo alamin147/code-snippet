@@ -1,0 +1,169 @@
+{
+    "editor.fontSize": 20,
+    "emmet.showSuggestionsAsSnippets": true,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "workbench.activityBar.location": "top",
+    "terminal.integrated.env.windows": {},
+    "workbench.iconTheme": "material-icon-theme",
+    "console-ninja.featureSet": "Community",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "code-runner.runInTerminal": true,
+    "workbench.startupEditor": "none",
+    "git.autofetch": true,
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "editor.suggest.preview": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false,
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cmake.configureOnOpen": false,
+    "cmake.showOptionsMovedNotification": false,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "tabnine.experimentalAutoImports": true,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.mouseWheelScrollSensitivity": 2,
+    "files.autoSave": "afterDelay",
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "accessibility.signals.lineHasInlineSuggestion": {
+      "sound": "off"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.screenReaderAnnounceInlineSuggestion": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "update.showReleaseNotes": false,
+    "prisma.showPrismaDataPlatformNotification": false,
+    "editor.wordWrap": "on",
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  
+  
+  
+    "[sql]": {
+      "editor.defaultFormatter": "cweijan.vscode-postgresql-client2"
+    },
+  
+    
+    "workbench.colorTheme": "Monokai",
+    "extensions.autoUpdate": false,
+    "explorer.confirmDragAndDrop": false,
+    "code-runner.executorMap": {
+    
+    
+      "javascript": "node",
+      "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+      "zig": "zig run",
+  
+      "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "php": "php",
+      "python": "python -u",
+      "perl": "perl",
+      "perl6": "perl6",
+      "ruby": "ruby",
+      "go": "go run",
+      "lua": "lua",
+      "groovy": "groovy",
+      "powershell": "powershell -ExecutionPolicy ByPass -File",
+      "bat": "cmd /c",
+      "shellscript": "bash",
+      "fsharp": "fsi",
+      "csharp": "scriptcs",
+      "vbscript": "cscript //Nologo",
+      "typescript": "ts-node",
+      "coffeescript": "coffee",
+      "scala": "scala",
+      "swift": "swift",
+      "julia": "julia",
+      "crystal": "crystal",
+      "ocaml": "ocaml",
+      "r": "Rscript",
+      "applescript": "osascript",
+      "clojure": "lein exec",
+      "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+      "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+      "racket": "racket",
+      "scheme": "csi -script",
+      "ahk": "autohotkey",
+      "autoit": "autoit3",
+      "dart": "dart",
+      "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+      "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+      "haskell": "runghc",
+      "nim": "nim compile --verbosity:0 --hints:off --run",
+      "lisp": "sbcl --script",
+      "kit": "kitc --run",
+      "v": "v run",
+      "sass": "sass --style expanded",
+      "scss": "scss --style expanded",
+      "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+      "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "sml": "cd $dir && sml $fileName",
+      "mojo": "mojo run",
+      "erlang": "escript",
+      "spwn": "spwn build",
+      "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+      "gleam": "gleam run -m $fileNameWithoutExt",
+  
+      //WITHOUT TEXT FILE
+  
+      // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  
+  
+  
+    //WITH TEXT FILE- gpt
+   "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && if ($?) { Get-Content input.txt | & .\\$fileNameWithoutExt.exe | Set-Content output.txt } else { Set-Content output.txt 'Time Limit Gone' }",
+   // C++ language with input/output redirection in PowerShell
+   "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && if ($?) { Get-Content input.txt | & .\\$fileNameWithoutExt.exe | Set-Content output.txt } else { Set-Content output.txt 'Time Limit Gone' }"
+  
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "accessibility.signalOptions.volume": 0,
+    "accessibility.signals.chatRequestSent": {
+      "announcement": "off",
+      "sound": "off"
+    },
+    "accessibility.signals.chatResponseReceived": {
+      "sound": "off"
+    },
+    "accessibility.signals.clear": {
+      "sound": "off",
+      "announcement": "off"
+    },
+    "accessibility.signals.terminalBell": {
+      "sound": "off",
+      "announcement": "off"
+    },
+    "accessibility.signals.terminalCommandFailed": {
+      "sound": "off",
+      "announcement": "off"
+    },
+    "sqltools.format": {
+  
+    },
+    "hediet.vscode-drawio.resizeImages": null,
+    "C_Cpp.default.compilerPath": ""
+  }
+  
